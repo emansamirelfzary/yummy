@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yummy</title>
+    <link rel="icon" href="./images/logo.png">
+    <!-- Css Files -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/yummy.css">
+</head>
+<body>
+    <!-- loading screen -->
+    <div id="main-loading" class="position-fixed loading">
+        <i class="fas fa-spinner fa-spin fa-4x text-white"></i>
+    </div>
+    <!-- Nav Bar-->
+    <nav class="vh-100 position-fixed top-0 d-flex">
+        <div class="menu bg-black d-flex flex-column justify-content-between p-4">
+            <div class="links">
+                <ul class="p-0 overflow-hidden">
+                    <li class="position-relative"><a href="#search" class="text-white" id="search">Search</a></li>
+                    <li class="position-relative"><a href="#categories" class="text-white" id="categories">Categories</a></li>
+                    <li class="position-relative"><a href="#area" class="text-white" id="area">Area</a></li>
+                    <li class="position-relative"><a href="#ingredients" class="text-white" id="ingredients">Ingredients</a></li>
+                    <li class="position-relative"><a href="#contact" class="text-white" id="contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="social d-flex p-0 mb-0">
+                    <li class="me-1"><i class="fa-brands fa-facebook text-white"></i></li>
+                    <li class="me-1"><i class="fa-brands fa-twitter text-white"></i></li>
+                    <li> <i class="fa-solid fa-globe mb-2 text-white"></i>
+                    </li>
+                </ul>
+                <p class="text-white">Copyright Â© 2019 All Rights<br>
+                    Reserved.</p>
+                 <a href="" target="_blank"></a>
+            </div>
+        </div>
+        <div class="navicon py-4 px-2 bg-white d-flex flex-column justify-content-between h-100 align-items-center ">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo" width="50px">
+            </div>
+            <div class="menu-btn">
+                <i class="fa-solid open-close-icon fa-2x fa-align-justify" id="open"></i>
+                <i class="fa-solid fa-xmark fa-3x d-none" id="close"></i>
+            </div>
+            <div class="d-flex flex-column text-center">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+    <!--meals-->
+    <section class="meals" id="meals">
+        <div class="container">
+            <div class="row mt-3 g-4 w-75 mx-auto d-none" id="search-input">
+                <div class="col-md-6">
+                    <input type="text" class="w-100 form-control bg-transparent text-white" placeholder="search by name" id="name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" maxlength="1" class="w-100 form-control bg-transparent text-white" placeholder="search by first letter" id="letter">
+                </div>
+            </div>
+           <div class="vh-100 position-relative">
+            <div id="meals-loading" class="position-absolute loading z-3">
+                <i class="fas fa-spinner fa-spin fa-4x text-white"></i>
+            </div>   
+            <div class="row g-4 mt-4" id="showMeals">
+              
+               
+            </div>
+            <!-- contact form -->
+            <div class="contact-form d-none">
+            <div class="d-flex align-items-center justify-content-center vh-100">
+          <div class="text-center">
+        <div class="row form w-75 mx-auto g-4">
+            <div class="col-md-6">
+                <input type="text" class=" form-control w-100" placeholder="Enter Your Name" id="nameInput">
+                <p class="name-alert mb-0 d-none"></p>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class=" form-control w-100" placeholder="Enter Your Email" id="emailInput">
+                <p class="email-alert mb-0 d-none"></p>
+            </div>
+            <div class="col-md-6">
+                <input type="tel" class=" form-control w-100" placeholder="Enter Your Number" id="phoneInput">
+                <p class="phone-alert mb-0 d-none"></p>
+            </div>
+            <div class="col-md-6">
+                <input type="number" class=" form-control w-100" placeholder="Enter Your Age" id="ageInput">
+                <p class="age-alert mb-0 d-none"></p>
+            </div>
+            <div class="col-md-6">
+                <input type="password" class=" form-control w-100" placeholder="Enter Your Password" id="passwordInput">
+                <p class="password-alert mb-0 d-none"></p>
+            </div>
+            <div class="col-md-6">
+                <input type="password" class=" form-control w-100" placeholder="Repassword" id="repasswordInput">
+                <p class="alarm d-none repassword-alert"></p>
+            </div>
+        </div>
+        <button id="submitBtn" disabled class="btn btn-outline-danger text-center p-2 mt-3" type="submit">Submit</button>
+     </div>
+        </div>
+    </div>
+        </div>
+        </div>
+
+    </section>
+  
+    <!-- Scripts Files-->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
